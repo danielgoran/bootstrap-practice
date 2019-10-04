@@ -51,17 +51,26 @@
 
 	Below I have div with class “row” (the wrapper), and inside of it we have 4 blocks,each block takes up 3 columns.
 
-	In the browser it looks like the following: the first block, the second block, the third block and the fourth block – all of them take up an equal space horizontally. 
+	In the browser it looks like the following: the first block, the second block, the third block and the fourth block – all of them take up an equal space horizontally. But if you look at the bottom of the browser window, you can see a small horizontal scroll. This is because we used class “row” which, when used on its own, can allow the page to go beyond the screen. 
+
+	So, in order to avoid that - we need to use either a “container-fluid” or a “container” class.
+
+	Let’s use “container-fluid” and see what happens. I create “container-fluid” class,close it after class “row”, and I tabulate class “row” (because it is placed inside).
+
+	If I save and refresh the page I can see, the horizontal scroll disappeared and the blocks fit perfectly within the width of the browser.
+
+	If I reduce or increase the width of the browser – regardless of the actual size of the window – the blocks will be displayed at full browser width.
 
 	 ===== -->
-
-	<div class="row">
-		<div class="col-3"></div>
-		<div class="col-3"></div>
-		<div class="col-3"></div>
-		<div class="col-3"></div>
+	 
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-3"></div>
+			<div class="col-3"></div>
+			<div class="col-3"></div>
+			<div class="col-3"></div>
+		</div>
 	</div>
-
 
 
 
