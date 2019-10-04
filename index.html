@@ -62,7 +62,44 @@
 	If I reduce or increase the width of the browser – regardless of the actual size of the window – the blocks will be displayed at full browser width.
 
 	 ===== -->
-	 
+
+<!-- 	<div class="container-fluid">
+		<div class="row">
+			<div class="col-3"></div>
+			<div class="col-3"></div>
+			<div class="col-3"></div>
+			<div class="col-3"></div>
+		</div>
+	</div> -->
+
+
+	<!-- ===== Now let’s change “container-fluid” to just “container” and if I refresh the page I can see the container is placed in the center and has a certain fixed width (because if we decrease or increase the width of the window, the size of the container stays the same).
+
+	And, accordingly, there are empty spaces on the right and left sides of the screen. To keep track of the browser size. If I open the inspector (inspect page) at the moment the width of the browser is equal to 1291 pixels. 1291 pixels is larger than 1200px. Therefore, it is xl format. 
+
+	And that’s why right now the green block has the fixed width of 1140px.
+
+	We are changing the width of the browser’s screen, but still the green block has the fixed width equal to 1140 pixels.
+
+	Now let’s decrease the width of the screen to lg format.
+
+	For lg format the width of the browser is larger than 992px and less than 1200px.
+
+	We are changing the width.
+
+	Ok, it’s less than 1200px, so it is already lg format and that’s why right now our green block has the fixed width equal to 960px.
+
+	Now the width of the screen is less than 992px, so it is already md format and the green block has the fixed width of 720px.
+
+	Let’s reduce the width even more.
+
+	Ok, the width of the browser is less than 768px, that means it is already sm format.
+
+	Therefore, our green block has the fixed width equal to 540 pixels.
+
+	Now if we cross the line of 576px, it is already xs format and the width of the green block becomes 100% and it acts like “container-fluid”.
+
+	In other words, it is spanned across the whole width of the browser. ===== -->
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-3"></div>
@@ -71,15 +108,6 @@
 			<div class="col-3"></div>
 		</div>
 	</div>
-
-
-
-
-
-
-	
-
-
 </body>
 </html>
 
