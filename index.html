@@ -3,11 +3,59 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Bootstrap Practice</title>
-<!-- 	<link rel="stylesheet" href="css/bootstrap.min.css"> -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	
+	<div class="row">
+		<!-- === Display extra large with one block which take the space of 12 columns ( xl is only used when the size is larger than 1200px). === -->
+		<!-- <div class="col-xl-12"></div> -->
+		
+
+		<!-- === The blocks now take the whole space which is divided into two parts === -->
+		<!-- <div class="col-xl-6"></div>
+		<div class="col-xl-6"></div> -->
+
+		<!-- === Block col-xl-6 takes half of the page, two other blocks divide the other half of the page (col-xl-4 take the place of 4 columns and col-xl-2 takes up only 2 columns) === -->
+		<!-- <div class="col-xl-6"></div>
+		<div class="col-xl-4"></div>
+		<div class="col-xl-2"></div> -->
+
+
+		<!-- === This block will take only 4 columns instead of 6, and we’ll do the same with the second and third blocks. Now the blocks will take up 4 columns when the size is from lg to xl.=== -->
+		<!-- <div class="col-xl-6 col-lg-4"></div>
+		<div class="col-xl-4 col-lg-4"></div>
+		<div class="col-xl-2 col-lg-4"></div> -->
+
+
+		<!-- === I've added col-3,then col-3 for the second one, and col-6 for the third one and because I haven’t specified the display size (neither xl or md), it means that we have xs by default. And this applies for extra-small and going up (from the lesser display to the greater one). This means, starting with xs up to lg (up to large displays) – the grid will consist of 3 columns. So this way we can change the size to the smallest and have 3-3-6. As soon as I cross the line of lg, which is 992px, the grid becomes 4-4-4. But if I go to extra-large, which is more than 1200px, I get 6-4-2.=== -->
+		<div class="col-3 col-xl-6 col-lg-4"></div>
+		<div class="col-3 col-xl-4 col-lg-4"></div>
+		<div class="col-6 col-xl-2 col-lg-4"></div>
+	</div>
+	<!-- === If we want to create another row, we just need to create another class “row” rightnext to the first one.
+
+		I.e. if the size is larger than 1200px - everything works fine, but as soon as the size gets less than 1200px – all our blocks are placed one below the other, which doesn’t look really nice.
+		The thing is, we wrote col-xl-6 and xl is only used when the size is larger than 1200px. (I.e. the whole space will be equally divided by them.)
+
+		=== -->
+	<div class="row">
+		<div class="col-xl-6"></div>
+		<div class="col-xl-6"></div>
+	</div>
+
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
