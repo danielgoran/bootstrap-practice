@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<div class="row">
+<!-- 	<div class="row"> -->
 		<!-- === Display extra large with one block which take the space of 12 columns ( xl is only used when the size is larger than 1200px). === -->
 		<!-- <div class="col-xl-12"></div> -->
 		
@@ -30,20 +30,45 @@
 
 
 		<!-- === I've added col-3,then col-3 for the second one, and col-6 for the third one and because I haven’t specified the display size (neither xl or md), it means that we have xs by default. And this applies for extra-small and going up (from the lesser display to the greater one). This means, starting with xs up to lg (up to large displays) – the grid will consist of 3 columns. So this way we can change the size to the smallest and have 3-3-6. As soon as I cross the line of lg, which is 992px, the grid becomes 4-4-4. But if I go to extra-large, which is more than 1200px, I get 6-4-2.=== -->
-		<div class="col-3 col-xl-6 col-lg-4"></div>
+		<!-- <div class="col-3 col-xl-6 col-lg-4"></div>
 		<div class="col-3 col-xl-4 col-lg-4"></div>
-		<div class="col-6 col-xl-2 col-lg-4"></div>
-	</div>
-	<!-- === If we want to create another row, we just need to create another class “row” rightnext to the first one.
+		<div class="col-6 col-xl-2 col-lg-4"></div> -->
 
-		I.e. if the size is larger than 1200px - everything works fine, but as soon as the size gets less than 1200px – all our blocks are placed one below the other, which doesn’t look really nice.
-		The thing is, we wrote col-xl-6 and xl is only used when the size is larger than 1200px. (I.e. the whole space will be equally divided by them.)
 
-		=== -->
+		<!-- === If we want to create another row, we just need to create another class “row” rightnext to the first one.
+
+			I.e. if the size is larger than 1200px - everything works fine, but as soon as the size gets less than 1200px – all our blocks are placed one below the other, which doesn’t look really nice.
+			The thing is, we wrote col-xl-6 and xl is only used when the size is larger than 1200px. (I.e. the whole space will be equally divided by them.)=== -->
+<!-- 	<div class="row">
+		<div class="col-xl-6"></div>
+		<div class="col-xl-6"></div>
+	</div> -->
+
+
+
+
+	<!-- ===== Bootstrap: container and container-fluid practice.
+
+	Below I have div with class “row” (the wrapper), and inside of it we have 4 blocks,each block takes up 3 columns.
+
+	In the browser it looks like the following: the first block, the second block, the third block and the fourth block – all of them take up an equal space horizontally. 
+
+	 ===== -->
+
 	<div class="row">
-		<div class="col-xl-6"></div>
-		<div class="col-xl-6"></div>
+		<div class="col-3"></div>
+		<div class="col-3"></div>
+		<div class="col-3"></div>
+		<div class="col-3"></div>
 	</div>
+
+
+
+
+
+
+
+	
 
 
 </body>
