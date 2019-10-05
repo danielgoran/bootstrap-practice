@@ -146,7 +146,15 @@
 	In other words, the class “offset-lg-3” says to Bootstrap: “Please, move the div to the right, 3 columns over. -->
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-4 offset-2"></div>
+<!-- 			<div class="col-lg-4 offset-2"></div> -->
+
+				<!-- Let’s say I want to place this block at the center of the container, so the spaces to the left and to the right of it are equal. What do I need to do? 
+
+				First of all, the overall width of our “row” is 12. So we deduct the width of the block from 12, 12 minus 4 is 8 and our element will be centered if the spaces to the right and to the left are equal. The overall space is 8, so that means 4 to the left and 4 to the right.
+				So I need to move the item to the right over by 4 columns. 
+
+				In this case, our item is placed exactly in the center under all sizes for which this rule is written. -->
+			<div class="col-lg-4 offset-4"></div>
 		</div>
 	</div>
 
