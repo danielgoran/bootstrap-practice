@@ -1,8 +1,14 @@
-.row>div{
+.col-xl-5{
 	height: 150px;
 	background: #ffff00;
 	border: 1px solid #000;
 }
+
+/*.row>div{
+	height: 150px;
+	background: #ffff00;
+	border: 1px solid #000;
+}*/
 
 
 /*.container{
